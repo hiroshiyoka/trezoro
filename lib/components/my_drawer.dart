@@ -30,6 +30,20 @@ class MyDrawer extends StatelessWidget {
             icon: Icons.home,
             onTap: () {},
           ),
+
+          // Cart Tile
+          MyListTile(
+            text: "Cart",
+            icon: Icons.shopping_cart,
+            onTap: () {},
+          ),
+
+          // Exit Shop Tile
+          MyListTile(
+            text: "Exit",
+            icon: Icons.logout,
+            onTap: () {},
+          ),
         ],
       ),
     );
