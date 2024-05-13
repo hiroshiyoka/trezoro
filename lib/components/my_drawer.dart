@@ -10,39 +10,47 @@ class MyDrawer extends StatelessWidget {
     return Drawer(
       backgroundColor: Theme.of(context).colorScheme.background,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          // Drawer Header Logo
-          DrawerHeader(
-            child: Center(
-              child: Icon(
-                Icons.shopping_bag,
-                size: 72,
-                color: Theme.of(context).colorScheme.inversePrimary,
+          Column(
+            children: [
+              // Drawer Header Logo
+              DrawerHeader(
+                child: Center(
+                  child: Icon(
+                    Icons.shopping_bag,
+                    size: 72,
+                    color: Theme.of(context).colorScheme.inversePrimary,
+                  ),
+                ),
               ),
-            ),
-          ),
 
-          const SizedBox(height: 25),
+              const SizedBox(height: 25),
 
-          // Shop Tile
-          MyListTile(
-            text: "Shop",
-            icon: Icons.home,
-            onTap: () {},
-          ),
+              // Shop Tile
+              MyListTile(
+                text: "Shop",
+                icon: Icons.home,
+                onTap: () {},
+              ),
 
-          // Cart Tile
-          MyListTile(
-            text: "Cart",
-            icon: Icons.shopping_cart,
-            onTap: () {},
+              // Cart Tile
+              MyListTile(
+                text: "Cart",
+                icon: Icons.shopping_cart,
+                onTap: () {},
+              ),
+            ],
           ),
 
           // Exit Shop Tile
-          MyListTile(
-            text: "Exit",
-            icon: Icons.logout,
-            onTap: () {},
+          Padding(
+            padding: const EdgeInsets.only(bottom: 25),
+            child: MyListTile(
+              text: "Exit",
+              icon: Icons.logout,
+              onTap: () {},
+            ),
           ),
         ],
       ),
