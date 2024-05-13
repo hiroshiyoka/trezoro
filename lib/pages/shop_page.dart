@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '/components/my_drawer.dart';
+
 class ShopPage extends StatelessWidget {
   const ShopPage({super.key});
 
@@ -12,6 +14,7 @@ class ShopPage extends StatelessWidget {
         foregroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text("Shop Page"),
       ),
+      drawer: MyDrawer(),
     );
   }
 }
