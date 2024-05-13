@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '/components/my_list_tile.dart';
+
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
 
@@ -18,6 +20,15 @@ class MyDrawer extends StatelessWidget {
                 color: Theme.of(context).colorScheme.inversePrimary,
               ),
             ),
+          ),
+
+          const SizedBox(height: 25),
+
+          // Shop Tile
+          MyListTile(
+            text: "Shop",
+            icon: Icons.home,
+            onTap: () {},
           ),
         ],
       ),
