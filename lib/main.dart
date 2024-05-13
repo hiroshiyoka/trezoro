@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trezoro/themes/light_mode.dart';
 
 import 'pages/intro_page.dart';
 
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: IntroPage(),
+      theme: lightMode,
     );
   }
 }
