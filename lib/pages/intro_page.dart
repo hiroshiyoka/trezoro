@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '/components/my_button.dart';
 
 class IntroPage extends StatelessWidget {
   const IntroPage({super.key});
@@ -38,6 +39,14 @@ class IntroPage extends StatelessWidget {
                 color: Theme.of(context).colorScheme.inversePrimary,
               ),
             ),
+
+            const SizedBox(height: 25),
+
+            // Button
+            MyButton(
+              onTap: () {},
+              child: const Icon(Icons.arrow_forward),
+            )
           ],
         ),
       ),
