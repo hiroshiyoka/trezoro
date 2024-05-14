@@ -31,14 +31,20 @@ class MyDrawer extends StatelessWidget {
               MyListTile(
                 text: "Shop",
                 icon: Icons.home,
-                onTap: () {},
+                onTap: () => Navigator.pop(context),
               ),
 
               // Cart Tile
               MyListTile(
                 text: "Cart",
                 icon: Icons.shopping_cart,
-                onTap: () {},
+                onTap: () {
+                  // Drawer First
+                  Navigator.pop(context);
+
+                  // Navigate to Cart Page
+                  Navigator.pushNamed(context, '/cart_page');
+                },
               ),
             ],
           ),
