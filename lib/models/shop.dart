@@ -31,4 +31,10 @@ class Shop {
 
   // User Cart
   List<Product> _cart = [];
+
+  // Get Product List
+  List<Product> get shop => _shop;
+
+  // Get User Cart
+  List<Product> get cart => _cart;
 }
