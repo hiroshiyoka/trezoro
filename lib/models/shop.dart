@@ -37,4 +37,14 @@ class Shop {
 
   // Get User Cart
   List<Product> get cart => _cart;
+
+  // Add Item to Cart
+  void addToCart(Product item) {
+    _cart.add(item);
+  }
+
+  // Remove Item from Cart
+  void removeFromCart(Product item) {
+    _cart.remove(item);
+  }
 }
