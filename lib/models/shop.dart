@@ -28,4 +28,7 @@ class Shop {
       description: "Item Description...",
     ),
   ];
+
+  // User Cart
+  List<Product> _cart = [];
 }
