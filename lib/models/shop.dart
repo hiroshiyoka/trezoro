@@ -1,6 +1,7 @@
+import 'package:flutter/material.dart';
 import 'package:trezoro/models/product.dart';
 
-class Shop {
+class Shop extends ChangeNotifier {
   // Products for Sale
   final List<Product> _shop = [
     // Product 1
