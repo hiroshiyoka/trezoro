@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:trezoro/models/shop.dart';
 import 'package:trezoro/themes/light_mode.dart';
 
 import 'pages/intro_page.dart';
@@ -6,7 +8,12 @@ import 'pages/shop_page.dart';
 import 'pages/cart_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (context) => Shop(),
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
