@@ -15,6 +15,8 @@ class MyProductTile extends StatelessWidget {
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
       ),
+      margin: const EdgeInsets.all(10),
+      padding: const EdgeInsets.all(25),
       child: Column(
         children: [
           // Product Image
