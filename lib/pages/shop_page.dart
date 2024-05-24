@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:trezoro/models/shop.dart';
 
 import '/components/my_drawer.dart';
 
@@ -7,6 +9,9 @@ class ShopPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Access to Products in Shop
+    final products = context.watch<Shop>().shop;
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
