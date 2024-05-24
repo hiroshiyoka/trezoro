@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:trezoro/components/my_product_tile.dart';
 import 'package:trezoro/models/shop.dart';
 
 import '/components/my_drawer.dart';
@@ -21,6 +22,16 @@ class ShopPage extends StatelessWidget {
       ),
       drawer: const MyDrawer(),
       backgroundColor: Theme.of(context).colorScheme.background,
+      body: ListView.builder(
+        itemCount: products.length,
+        itemBuilder: (context, index) {
+          // Get each Individual Products from Shop
+          final product = products[index];
+
+          // Return as a Product Tile UI
+          return MyProductTile(product: product);
+        },
+      ),
     );
   }
 }
