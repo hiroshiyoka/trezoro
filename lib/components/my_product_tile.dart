@@ -12,6 +12,9 @@ class MyProductTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: BoxDecoration(
+        color: Theme.of(context).colorScheme.primary,
+      ),
       child: Column(
         children: [
           // Product Image
